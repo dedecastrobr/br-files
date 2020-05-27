@@ -21,19 +21,19 @@ Você deve ver algo assim (a versão pode variar, mas deve aparecer):
 
 Agora que você tem as ferramentas necessárias, para utilizar o script:
 
-* Vá até o diretório onde você pretende baixar o script e rode:
+Vá até o diretório onde você pretende baixar o script e rode:
 ```bash
 git pull https://github.com/dedecastrobr/br-files.git
 ```
-* Uma pasta (br-files) automaticamente será criada. Entre nela e digite:
+Uma pasta (br-files) automaticamente será criada. Entre nela e digite:
 ```bash
 npm install
 ```
-* Isso instalar as libs que o script usa
+Isso vai instalar as libs que o script usa.
 
 
-Pronto, agora o script está pronto para uso.
-* Para rodar o script apenas execute, por exemplo:
+
+Para rodar o script apenas execute, por exemplo:
 ```bash
 node br-files.js arquivoDeOrigem.txt arquivoDeDestino.txt
 ```
