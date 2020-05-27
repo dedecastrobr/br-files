@@ -1,0 +1,14 @@
+{
+  "name": "br-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "br-files.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@dedecastrobr",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^9.0.0"
+  }
+}
