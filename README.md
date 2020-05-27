@@ -4,14 +4,23 @@ Esse script copia os arquivos de uma local pra outro. E somente isso.
 Você precisa de um computador com git e NodeJS instalados. 
 
 ### Aqui você encontra informações de como instalar o git em uma máquina com Windows 10.
+    https://woliveiras.com.br/posts/instalando-o-git-windows/
 
-### Aqui você encontra informações de como instalar o NodeJS em uma máquina com Windows 10.
+### Aqui você encontra a última versão do NodeJS para Windows. Baixar e instalar, sem mistério.
+    https://nodejs.org/en/download/
 
+Depois do download e instalação, caso não ocorra problemas, abra o prompt de comando e digite:
 
-Para utilizar o script:
+```bash
+    node -v
+```
+Você deve ver algo assim (a versão pode variar, mas deve aparecer):
+```bash
+    v11.12.0
+```
 
-* Instale o git;
-* Instale o NodeJS;
+Agora que você tem as ferramentas necessárias, para utilizar o script:
+
 * Vá até o diretório onde você pretende baixar o script e rode:
 ```bash
 git pull https://github.com/dedecastrobr/br-files.git
