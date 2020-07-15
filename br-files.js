@@ -15,7 +15,7 @@ async function brFiles(command, source, destination) {
                 if (new Date().getDate() == 1) {
                     syncMonthly(source, destination)
                 }
-            }, 60);
+            }, 60000);
             console.log("Tudo pronto! Nos vemos no próximo dia 01! ;)")
         })
         .catch(error => {
