@@ -10,13 +10,11 @@ async function brFiles(command, source, destination) {
         case "SYNC-MONTH":
         await syncMonthly(source, destination)
         .then(() =>{
-            console.log("Programando execução mensal")
+            console.log("Programando execução a cada 3 horas")
             setInterval(() => {
-                if (new Date().getDate() == 1) {
-                    syncMonthly(source, destination)
-                }
-            }, 86400);
-            console.log("Tudo pronto! Nos vemos no próximo dia 01! ;)")
+                syncMonthly(source, destination)
+            }, 10800);
+            console.log("Tudo pronto! Nos vemos em 3 horas! ;)")
         })
         .catch(error => {
             console.log("Problemas com a atualização. Favor verificar: \n" + error)
@@ -31,7 +29,6 @@ async function brFiles(command, source, destination) {
 async function syncMonthly(sourceFolder, destinationFolder) {
     console.log("Atualizando arquivos do mês")
         let date = new Date();
-        date.setMonth(date.getMonth() - 1)
         let filePrefix = "log"+date.getFullYear()+("0"+(date.getMonth()+1)).slice(-2)
         let files = fs.readdirSync(sourceFolder).filter(fn => fn.startsWith(filePrefix))
         return await Promise.all(files.map(async (fn) => {
