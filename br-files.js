@@ -15,6 +15,7 @@ async function brFiles(command, source, destination) {
                 syncMonthly(source, destination)
             }, 10800);
             console.log("Tudo pronto! Nos vemos em 3 horas! ;)")
+
         })
         .catch(error => {
             console.log("Problemas com a atualização. Favor verificar: \n" + error)
